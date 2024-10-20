@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Open+Sans:wght@400;500&display=swap');
+
+:root {
+    --main-bg-color: #ffffff;
+    --secondary-bg-color: #f1f1f1;
+    --footer-bg-color: #343a40;
+    --text-color: white;
+    --highlight-color: #ff5733;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+}
+.sticky-search-bar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1030; 
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sticky-search-bar.scrolled {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ul.navbar-nav {
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+ul.navbar-nav .nav-item {
+    padding-bottom: 0.5rem; 
+}
+
+.hero {
+    background-image: url('/Designs/images/BUILD\ YOUR\ FUTURE\ \(2\).svg'); 
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Overlay for contrast */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Ensure the text stays above the overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1,
+.hero-content p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.main-box {
+    background-color: var(--main-bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -40px;
+    z-index: 1;
+}
+
+.inner-box {
+    background-color: var(--secondary-bg-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.inner-box:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--text-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Video Background Section */
+#processes {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Blurred Content Overlay */
+.content-overlay {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.blurred-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 80%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.overlay-title {
+    margin-bottom: 1rem; 
+    font-size: 2.5rem;
+}
+
+.overlay-subtitle {
+    margin-bottom: 0.5rem; 
+    font-size: 2rem;
+}
+
+.blurred-box p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.counter {
+    font-weight: bold;
+    color: var(--highlight-color);
+    margin-right: 10px;
+}
+
+/* Scoped Styles for Selling and Buying Process Lists */
+.process-list {
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+
+.process-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+.process-list li i {
+    margin-right: 10px; 
+    color: var(--highlight-color); 
+    font-size: 1.2rem; 
+}
+
+/* Responsive layout for sections */
+/* Box layout with improved spacing */
+.boxy-wrapper-new {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Headings and alignment */
+.boxy-wrapper-new h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.benefits-heading {
+    font-size: 1.5rem;
+    color: #ff5733;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.75rem;
+}
+
+/* Benefits list alignment */
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+   
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+  
+}
+.benefits-list i {
+    color: green;
+}
+/* Larger images with consistent scaling */
+.responsive-image-new {
+    width: 100%;
+    max-height: 320px; /* Max height to prevent overflow */
+    object-fit: cover; /* Ensure the image covers the space nicely */
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Reduce padding between columns */
+.row.g-4 > [class*='col'] {
+    padding: 1rem;
+}
+
+
+
+/* Marketing */
+
+/* Logo styling inside the carousel */
+.carousel-logo {
+    width: 180px;
+    height: auto;
+    margin: 0 auto 1rem; /* Center align and add spacing below */
+    display: block;
+}
+
+/* Marketing cards inside the carousel */
+.marketing-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+}
+
+/* Title inside each card */
+.marketing-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* List styling */
+.exposure-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.exposure-list li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Responsive behavior */
+@media (min-width: 768px) {
+    .marketing-card {
+        min-height: 350px;
+    }
+}
+
+
+
+/* international-affiliation*/
+
+
+.international-affiliations h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .affiliation-logo {
+    width: 80%;           /* Makes the logo large enough */
+    max-width: 250px;      /* Prevents it from getting too big */
+    height: auto;          /* Maintains aspect ratio */
+    margin-top: 1rem;      /* Adds space above the logo */
+    border-radius: 8px;    /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+  }
+  .affiliation-video {
+    width: 100%;        /* Make the video responsive */
+    max-width: 300px;   /* Set a reasonable max size */
+    height: auto;       /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners for a polished look */
+    margin-top: 1rem;   /* Add space above the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+  }
+    
+  
+  .lead {
+    color: #555;
+    font-size: 1.2rem;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-image {
+    max-width: 300px;  /* Increase max width */
+    width: 100%;        /* Ensures responsiveness */
+    height: auto;       /* Maintain aspect ratio */
+    margin-top: 1.5rem; /* Add spacing from text */
+    object-fit: contain;
+  }
+  
+
+
+/* work-with-us-section */
+
+
+  /* Section Styling */
+.work-with-us-section {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border-radius: 12px;
+    padding: 50px 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .work-with-us-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title Styling */
+  .work-with-us-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d47a1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Paragraph Styling */
+  .work-with-us-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #37474f;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Button Styling */
+  .btn-primary-custom {
+    background-color: #0d47a1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-primary-custom:hover {
+    background-color: #1565c0;
+    transform: scale(1.1);
+  }
+  
+  /* Icon Styling */
+  .fas {
+    margin-right: 8px;
+  }
+  
+  .text-primary {
+    color: #1976d2 !important;
+  }
+  
+  .text-warning {
+    color: #ffb300 !important;
+  }
+  
+  .text-danger {
+    color: #d32f2f !important;
+  }
+  
+  
+
+/* work-with-us-section */
+
+
+/* Julie Hansen Partnership */
+
+.jhp-section {
+    background-color: #f8f9fa;
+  }
+  
+  .jhp-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .jhp-address-title, .jhp-contact-title {
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .newsletter-box {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter-form input {
+    border-radius: 8px;
+  }
+  
+  .newsletter-form button {
+    border-radius: 8px;
+  }
+  
+  .privacy-text a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .privacy-text a:hover {
+    color: #0056b3;
+  }
+  
+
+
+/* Add this to your services.css */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+/* Control layout on different screen sizes */
+@media (min-width: 768px) {
+    .boxy-wrapper-new {
+        padding: 2rem;
+    }
+    .benefits-list li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .responsive-image-new {
+        max-height: 300px; /* Slightly larger images on desktop */
+    }
+}
+
+
+@media (min-width: 768px) {
+    .boxy-wrapper-new {
+        padding: 2rem;
+    }
+
+    .benefits-list li {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .benefits-list li {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Padding and margin adjustments for desktop and tablet */
+@media (min-width: 768px) {
+    .heading-new, .benefits-heading {
+        margin-bottom: 2rem;
+    }
+    
+    .text-content-new {
+        margin-bottom: 2rem;
+    }
+    
+    .boxy-wrapper-new {
+        padding: 2.5rem;
+    }
+}
+
+/* Fix spacing between list items on mobile */
+@media (max-width: 767px) {
+    .benefits-list li {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h2.new-title {
+        font-size: 2rem; /* Smaller titles on mobile */
+    }
+
+    h3.new-subtitle {
+        font-size: 1.5rem; /* Smaller subtitles on mobile */
+    }
+
+    p.new-text {
+        font-size: 1rem; /* Smaller body text on mobile */
+    }
+
+    .content-wrapper {
+        padding: 1rem; /* Less padding on mobile */
+    }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Adjust for smaller screens */
+    }
+
+    .blurred-box {
+        padding: 20px; /* Less padding for smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .affiliation-video {
+      max-width: 350px; /* Slightly larger for tablets and desktops */
+    }
+  }

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    
+
+<body>
+ 
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">|Sereno</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meet the Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Search for Homes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Communities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home Evaluation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Homes Across America</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      
+<!-- Sticky Search Bar -->
+<div class="sticky-search-bar bg-light">
+    <div class="container">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search for properties, services..." aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+      
+      <div class="hero fade-in">
+        <div class="overlay"></div> <!-- Overlay to improve text contrast -->
+        <div class="hero-content">
+            <h1>Elevate Your Real Estate Experience</h1>
+            <p>Contact Us Today!</p>
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 fade-in">Our Services</h1>
+        <div class="main-box">
+            <div class="row g-4">
+                <!-- Six Inner Boxes -->
+                <div class="col-md-4 fade-in">
+                    <div class="inner-box">
+                        <h3><i class="fa-solid fa-mobile-alt"></i> Responsive</h3>
+                        <p>I am always available via phone, text, or email to answer your questions in a timely manner.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="inner-box">
+                        <h3><i class="fa-solid fa-globe-americas"></i> Syndication</h3>
+                        <p>I market your property locally, nationally, and internationally.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="inner-box">
+                        <h3><i class="fa-solid fa-video"></i> Virtual Tour</h3>
+                        <p>Let's make your home stand out with a high-quality virtual tour.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="inner-box">
+                        <h3><i class="fa-solid fa-camera"></i> Photography</h3>
+                        <p>Beautiful, high-end photography is a central part of our marketing plan for your property.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="inner-box">
+                        <h3><i class="fa-solid fa-paint-brush"></i> Decor</h3>
+                        <p>Guidance for staging your home to maximize appeal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="inner-box">
+                        <h3><i class="fa-solid fa-user-check"></i> Expertise</h3>
+                        <p>Our staging expertise helps your home shine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Selling Process Section -->
+        <div id="processes" class="container-fluid position-relative text-center">
+            <!-- Video Background -->
+            <div class="video-wrapper">
+              <video autoplay muted loop playsinline class="bg-video">
+                <source src="/Designs/videos/BUILD YOUR FUTURE (1).mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          
+<!-- Blurred Overlay Content -->
+<div class="content-overlay fade-in">
+    <div class="blurred-box p-4">
+        <h2 class="text-center overlay-title">The Selling and Buying Process</h2>
+
+        <div class="row">
+            <!-- Selling Process -->
+            <div class="col-md-6 mb-4 " >
+                <h3 class="text-center overlay-subtitle">The Selling Process</h3>
+                <ul class="process-list mt-3">
+                    <li><i class="fas fa-comments"></i> 1. Initial Consultation & Planning (<span class="counter" data-target="10">0</span>)</li>
+                    <li><i class="fas fa-bullhorn"></i> 2. Devise & Execute Marketing Plan (<span class="counter" data-target="20">0</span>)</li>
+                    <li><i class="fas fa-check-circle"></i> 3. Review Offers & Reach Agreement (<span class="counter" data-target="15">0</span>)</li>
+                    <li><i class="fas fa-file-invoice"></i> 4. Complete Transaction Process (<span class="counter" data-target="30">0</span>)</li>
+                    <li><i class="fas fa-headset"></i> 5. After-Sale Service (<span class="counter" data-target="5">0</span>)</li>
+                </ul>
+            </div>
+
+            <!-- Buying Process -->
+            <div class="col-md-6 mb-4">
+                <h3 class="text-center overlay-subtitle">The Buying Process</h3>
+                <ul class="process-list mt-3">
+                    <li><i class="fas fa-comments"></i> 1. Initial Consultation & Planning (<span class="counter" data-target="8">0</span>)</li>
+                    <li><i class="fas fa-search"></i> 2. Search for a Home & Get Pre-Approved (<span class="counter" data-target="12">0</span>)</li>
+                    <li><i class="fas fa-file-signature"></i> 3. Submit an Offer (<span class="counter" data-target="7">0</span>)</li>
+                    <li><i class="fas fa-home"></i> 4. Complete Settlement Process (<span class="counter" data-target="25">0</span>)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>       
+              
+          </div>      
+          
+    </div>
+    
+      <!-- Over 33 Years of Real Estate Success -->
+    <div class="container my-5 fade-in">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="boxy-wrapper-new w-100">
+                    <h2><i class="fas fa-trophy"></i> Over 33 Years of Real Estate Success</h2>
+                    <p>We provide every one of our clients with service they won’t find elsewhere. We give them what they need, often before they know they need it.</p>
+                    <img src="/Designs/images/img1.svg" alt="Real Estate Success" class="responsive-image-new mt-auto">
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="boxy-wrapper-new w-100">
+                    <h2><i class="fas fa-star"></i> An Unforgettable Experience Awaits You...</h2>
+                    <p>We combine data from your home’s Comparative Market Analysis with local research to create a plan designed to meet your goals.</p>
+                    <img src="/Designs/images/img2.svg" alt="Unforgettable Experience" class="responsive-image-new mt-auto">
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="boxy-wrapper-new w-100">
+                    <h2><i class="fas fa-tablet-alt"></i> Hansen Partners Communications Tablet</h2>
+                    <p>Stay updated with daily communications and marketing updates through this easy-to-use platform.</p>
+    
+                    <h3 class="benefits-heading"><i class="fas fa-check-circle"></i> Benefits</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> Review documents and sign from anywhere.</li>
+                        <li><i class="fas fa-check-circle"></i> Track marketing activities in real-time.</li>
+                        <li><i class="fas fa-check-circle"></i> Meet with us online for weekly updates.</li>
+                        <li><i class="fas fa-check-circle"></i> Use video messaging for quick notes or updates.</li>
+                    </ul>
+    
+             
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ <!--  Exposure -->
+
+ <div id="marketingCarousel" class="carousel slide fade-in" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+  
+      <!-- Local Exposure -->
+      <div class="carousel-item active">
+        <div class="p-4 marketing-card">
+          <img src="/Designs/images/sponsors.jpeg" alt="Nextdoor Logo" class="carousel-logo">
+          <h3 class="marketing-title">
+            <i class="fas fa-map-marker-alt text-primary"></i> Local Exposure
+          </h3>
+          <p>Through our partnership with <strong>Nextdoor</strong>, used by over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, your home will get targeted local exposure.</p>
+          <p>Your listing will automatically appear on Nextdoor in your neighborhood.</p>
+        </div>
+      </div>
+  
+      <!-- National Exposure -->
+      <div class="carousel-item">
+        <div class="p-4 marketing-card">
+          <img src="/Designs/images/sponsors.jpeg" alt="Realtor Logo" class="carousel-logo">
+          <h3 class="marketing-title">
+            <i class="fas fa-globe-americas text-success"></i> National Exposure
+          </h3>
+          <p>We secure strategic positioning on <strong>Realtor.com</strong>, <strong>Trulia</strong>, and <strong>Zillow</strong> to drive traffic and inquiries directly to your listing.</p>
+          <p>Every inquiry will go straight to us to ensure timely responses to potential buyers.</p>
+        </div>
+      </div>
+  
+      <!-- International Exposure -->
+      <div class="carousel-item">
+        <div class="p-4 marketing-card">
+          <img src="/Designs/images/sponsors.jpeg" alt="Luxury Real Estate Logo" class="carousel-logo">
+          <h3 class="marketing-title">
+            <i class="fas fa-plane-departure text-warning"></i> International Exposure
+          </h3>
+          <p>We promote your luxury listing on renowned international real estate portals, including:</p>
+          <ul class="exposure-list">
+            <li>Wall Street Journal</li>
+            <li>LuxuryPortfolio.com</li>
+            <li>LuxuryRealEstate.com</li>
+            <li>Juwai, Caimeiju, and Country Life UK</li>
+          </ul>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  
+      
+    
+      <!-- international-affiliation -->
+    
+
+      <section class="international-affiliations py-5 fade-in">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2><i class="fas fa-globe"></i> Leading Real Estate Companies of The World® & Luxury Portfolio International</h2>
+            <p class="lead">Our global affiliations connect us with top brokers and buyers worldwide, ensuring your luxury property gets the attention it deserves.</p>
+          </div>
+      
+          <div class="container mt-5">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <h5>Luxury Portfolio International®</h5>
+                <p>With over 500 member firms worldwide, we reach potential buyers in more than 50 countries.</p>
+                <img src="/Designs/images/partners.png" alt="Luxury Portfolio Logo" class="affiliation-logo">
+              </div>
+              <div class="col-md-4 text-center">
+                <h5>Who's Who in Luxury Real Estate</h5>
+                <p>A prestigious network of top brokers specializing in luxury real estate.</p>
+                <video loop autoplay muted playsinline class="affiliation-video">
+                  <source src="/Designs/videos/vid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="col-md-4 text-center">
+                <h5>China Affiliate Offices</h5>
+                <p>We maintain offices in Hong Kong, Shanghai, and Beijing to connect with Chinese buyers.</p>
+                <img src="/Designs/images/partners2.jpg" alt="China Affiliate Logo" class="affiliation-logo">
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-5">
+            <p class="lead">
+              Through our affiliations, your property will be marketed across prominent global real estate portals, reaching over 70 million potential buyers worldwide.
+            </p>
+          
+            <!-- Logo Section -->
+            <div class="logo-container mt-4">
+              <img src="/Designs/images/lgos (2).svg" alt="Global Portal Logo" class="logo-image">
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+  
+
+ <!-- work-with-us-->
+   
+ <section class="work-with-us-section text-center py-5 fade-in">
+    <div class="container">
+      <i class="fas fa-hands-helping fa-3x text-primary mb-3"></i>
+      <h2 class="work-with-us-title mb-4">Work With Us</h2>
+      <p class="work-with-us-text mb-4">
+        <i class="fas fa-star text-warning"></i> With decades of experience in luxurious Tri-Valley real estate, 
+        our team is here to ensure that your dreams are a reality. <br>
+        <i class="fas fa-map-marker-alt text-danger"></i> Let us guide you through your home buying journey— 
+        <strong>contact us today!</strong>
+      </p>
+      <button class="btn btn-primary-custom mt-3">
+        <i class="fas fa-phone-alt"></i> Contact Us
+      </button>
+    </div>
+  </section>
+  
+      
+ <!-- work-with-us-->
+
+
+ <!-- Julie Hansen Partnership-->
+
+ <section class="jhp-section py-5 fade-in">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="jhp-title"><i class="fas fa-handshake"></i> Julie Hansen Partnership</h2>
+          <p class="lead">
+            An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.
+          </p>
+          <h5 class="jhp-address-title"><i class="fas fa-map-marker-alt"></i> ADDRESS</h5>
+          <p class="mb-1">4733 Chabot Drive #100 <br>Pleasanton, CA 94588</p>
+          <p class="mb-3">Julie Hansen-Orvis | CA DRE# 00934447</p>
+  
+          <h5 class="jhp-contact-title"><i class="fas fa-phone-alt"></i> CONTACT INFORMATION</h5>
+          <p><i class="fas fa-phone"></i> (925) 553-6707</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:luxuryhomesinwc@icloud.com">luxuryhomesinwc@icloud.com</a></p>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="newsletter-box p-4 rounded">
+            <h4 class="text-center"><i class="fas fa-newspaper"></i> Newsletter</h4>
+            <p class="text-center">
+              Subscribe to our Newsletter for the latest news and updates. Stay tuned!
+            </p>
+            <form class="newsletter-form">
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Enter your email" required />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <small class="privacy-text mt-3 d-block text-center">
+              By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our <a href="#">Privacy Policy</a> and consent to receiving marketing communications. Opt out anytime by replying ‘stop’ to texts or clicking ‘unsubscribe’ in emails. Message and data rates may apply.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer mt-5 fade-in">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Hansen Partners | All Rights Reserved</p>
+            <p class="mb-0">Address: 4733 Chabot Drive #100, Pleasanton, CA 94588</p>
+            <p class="mb-0">Contact: (925) 553-6707 | Email: luxuryhomesinwc@icloud.com</p>
+        </div>
+    </footer>
+
+
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
